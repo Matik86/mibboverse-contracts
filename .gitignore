@@ -1,0 +1,33 @@
+# Node modules
+/node_modules
+package-lock.json
+
+# Compilation output
+/dist
+
+# pnpm deploy output
+/bundle
+
+# Hardhat Build Artifacts
+/artifacts
+
+# Env
+.env
+.env.*
+
+# Hardhat compilation (v2) support directory
+/cache
+
+# Typechain output
+/types
+
+# Hardhat coverage reports
+/coverage
+
+# Archive
+/test_archive
+/scripts
+/ignition/deployments/
+
+# IDE
+.vscode_hardhat_config_*.ts
