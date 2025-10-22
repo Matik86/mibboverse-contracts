@@ -88,13 +88,12 @@ BASE_SEPOLIA_RPC_URL=your_rpc_url
 PRIVATE_KEY=your_private_key
 ```
 
-## 🧪 Common Commands
+## 🛠 Common Commands
 
 | Command | Description |
 | --- | --- |
 | `npx hardhat compile` | Compile all smart contracts |
 | `npx hardhat test` | Run tests for contracts |
-| `npx hardhat test` | Show file differences that **haven't been** staged |
 
 Deploy contracts on the Base Sepolia
 ```bash
@@ -109,6 +108,7 @@ npx hardhat run ignition/modules/GenesisNFT.ts --network baseSepolia
 ```bash
 npx hardhat run ignition/modules/TokenVault.ts --network baseSepolia
 ```
+
 
 
 
