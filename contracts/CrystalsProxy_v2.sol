@@ -51,18 +51,28 @@ import "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable
 contract CrystalsV2 is ERC20Upgradeable, OwnableUpgradeable, EIP712Upgradeable, UUPSUpgradeable {
     using ECDSAUpgradeable for bytes32;
     
-    // Whitelisted contracts that are allowed to interact with approve/transferFrom
+    /// @notice Whitelisted contracts that are allowed to interact with approve/transferFrom
     mapping(address => bool) public contractWhitelist;
-    // Mapping of admin addresses (besides the owner)
+
+    /// @notice Mapping of admin addresses (besides the owner)
     mapping(address => bool) public admins;
-    // Nonces for replay protection in signature-based minting
+
+    /// @notice Nonces for replay protection in signature-based minting
     mapping(address => uint256) public nonces;
     
-    // Events for better tracking and transparency
+    /// @notice Emitted when a contract is added or removed from the whitelist
     event ContractWhitelisted(address indexed contractAddress, bool allowed);
+
+    /// @notice Emitted when an admin is added or removed
     event AdminUpdated(address indexed admin, bool allowed);
+
+    /// @notice Emitted when an admin mints tokens directly
     event AdminMint(address indexed to, uint256 amount);
+
+    /// @notice Emitted when an admin burns tokens from an account
     event AdminBurn(address indexed from, uint256 amount);
+
+    /// @notice Emitted when tokens are minted via an off-chain signature (EIP-712)
     event MintWithSignature(address indexed to, uint256 amount, address indexed signer);
     
     // EIP-712 typehash for signature-based minting
