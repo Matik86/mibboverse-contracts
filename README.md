@@ -22,6 +22,7 @@ All contracts are deployed on **Base**
 |  [0x32a388e3BD3ae8C4Ba9918604A9690d0dED9d192](https://basescan.org/address/0x32a388e3bd3ae8c4ba9918604a9690d0ded9d192) | CrystalsV2 Implementation Contract | |
 |  [0x254737e8Ad378deB9fd8fB228Dea279bb7FCe5A3](https://basescan.org/address/0x254737e8Ad378deB9fd8fB228Dea279bb7FCe5A3) | Artifacts1155 | ERC1155 NFT representing collectible game artifacts |
 |  [0xdDa12482811FA76F3d1C23b548C495EEeE9F23C5](https://basescan.org/address/0xdDa12482811FA76F3d1C23b548C495EEeE9F23C5) | TokenVault | Contract for claiming rewards by users |
+|  [0xdDa12482811FA76F3d1C23b548C495EEeE9F23C5](https://basescan.org/address/0xc8Db0750c4da6dc903e2d350B338D7918Ab08075) | GenesisNFT | Genesis Egg NFT collection of the Mibboverse |
 
 ## Project Structure
 
@@ -108,6 +109,7 @@ npx hardhat run ignition/modules/GenesisNFT.ts --network baseSepolia
 ```bash
 npx hardhat run ignition/modules/TokenVault.ts --network baseSepolia
 ```
+
 
 
 
