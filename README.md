@@ -12,7 +12,7 @@ Mibboverse – a new gaming universe built on the Base ecosystem, where luck and
 
 > This repository contains the smart contracts that power the game.
 
-## ▶️ Deployed Contracts
+## Deployed Contracts
 
 All contracts are deployed on **Base**
 
@@ -23,7 +23,7 @@ All contracts are deployed on **Base**
 |  [0x254737e8Ad378deB9fd8fB228Dea279bb7FCe5A3](https://basescan.org/address/0x254737e8Ad378deB9fd8fB228Dea279bb7FCe5A3) | Artifacts1155 | ERC1155 NFT representing collectible game artifacts |
 |  [0xdDa12482811FA76F3d1C23b548C495EEeE9F23C5](https://basescan.org/address/0xdDa12482811FA76F3d1C23b548C495EEeE9F23C5) | TokenVault | Contract for claiming rewards by users |
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 mibboverse-contracts
@@ -58,7 +58,7 @@ mibboverse-contracts
 └── tsconfig.json
 ```
 
-## 🚀 Installation
+## Installation
 
 > To run this project locally, you need **Node.js** and **Hardhat** installed.
 
@@ -88,7 +88,7 @@ BASE_SEPOLIA_RPC_URL=your_rpc_url
 PRIVATE_KEY=your_private_key
 ```
 
-## 🛠 Common Commands
+## Common Commands
 
 | Command | Description |
 | --- | --- |
@@ -108,6 +108,7 @@ npx hardhat run ignition/modules/GenesisNFT.ts --network baseSepolia
 ```bash
 npx hardhat run ignition/modules/TokenVault.ts --network baseSepolia
 ```
+
 
 
 
